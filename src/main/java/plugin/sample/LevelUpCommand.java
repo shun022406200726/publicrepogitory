@@ -5,11 +5,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Testcommnd implements CommandExecutor {
+public class LevelUpCommand implements CommandExecutor {
 
   private Main main;
 
-  public Testcommnd(Main main) {
+  public LevelUpCommand(Main main) {
     this.main = main;
   }
 
@@ -21,7 +21,6 @@ public class Testcommnd implements CommandExecutor {
       } else {
         player.sendMessage(main.getConfig().getString("Message"));
       }
-
     }
     return false;
   }
